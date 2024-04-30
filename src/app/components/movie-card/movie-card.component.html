@@ -1,0 +1,7 @@
+<div class="card text-white movie-card mb-3" style="max-width: 18rem;" (click)="openDialog()">
+  <div class="card-header text-center"><h3 [title]="movie?.title">{{ movie?.title }}</h3></div>
+  <div class="card-body">
+    <p class="card-title text-center"><marquee>@for (genre of movie.genre; track $index) {<em>{{ genre }}. </em>}</marquee></p>
+    <div class="w-100 d-flex justify-content-center pb-2"><img [src]="movie?.image" alt=""></div>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+<div class="w-100 h-100 d-flex justify-content-center align-items-center flex-column gap-2 my-3">
+  <h1>{{ data?.title.toUpperCase() }}</h1>
+  <img [src]="data?.image" alt="">
+  <div class="w-100 d-flex justify-content-around p-5">
+    <em>@for (genre of data?.genre; track $index) {<span> {{genre}}. </span>}</em>
+    <span>Ano: {{ data?.year }}</span>
+    <span>Nota: {{ data?.rating }}</span>
+  </div>
+  <div class="desc p-4">{{ data?.description }}</div>
+</div>

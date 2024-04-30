@@ -1,0 +1,20 @@
+.movie-card {
+  background-color: rgb(104, 3, 3);
+  width: 15rem;
+  height: 30em;
+  cursor: pointer;
+  .card-header {
+    padding: 20px !important;
+    height: 5rem;
+    h3 {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+}
+
+img {
+  width: 200px;
+  height: 250px;
+}
